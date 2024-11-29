@@ -11,3 +11,6 @@ Generate random location on a basemap for user
 User selects spot on an interactive map popup
 Calculate score based on how close the user was to the area
 Allow for user leaderboards 
+
+
+I debated whether or not to wait until I learned React and NodeJS to start working on this. 
