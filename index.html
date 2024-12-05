@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Satellite Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="satellite-map"></div>
+
+    <div id="guess-container">
+        <div id="guess-map"></div>
+        <button id="submit-guess" disabled>Submit Guess</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <div id="result-content">
+            <h2>Your Result:</h2>
+            <p id="distance"></p>
+            <div id="result-map"></div>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

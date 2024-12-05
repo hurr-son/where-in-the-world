@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+#satellite-map {
+    height: 100%;
+    width: 100%;
+}
+
+#guess-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#guess-map {
+    height: 400px;
+    width: 600px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#submit-guess {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#result-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+#result-container.hidden {
+    display: none;
+}
+
+#result-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#result-map {
+    height: 400px;
+    margin: 20px 0;
+}
+
+#play-again {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.leaflet-control-attribution {
+    opacity: 0.5;
+    font-size: 12px;
+    padding: 5px;
+    background: none;
+    color: #000;
+}
