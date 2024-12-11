@@ -45,7 +45,7 @@ const SatelliteGuessGame = (function() {
 
         satelliteMap = L.map('satellite-map', {
             center: actualLocation,
-            zoom: 17,
+            zoom: 16,
             zoomControl: false,
             attributionControl: true,
             dragging: false,
