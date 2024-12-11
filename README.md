@@ -17,22 +17,3 @@ This is a browser-based guessing game where players see a random satellite image
    - A result map showing both the actual location and the player's guessed location, connected by a line.
    
 5. **Play Again**: The player can choose to play again, which resets the game with a new random location.
-
-## Files
-
-- **index.html**: The main HTML structure and references to CSS and JS.
-- **styles.css**: Basic styling for maps and UI elements.
-- **main.js**: The core game logic. It handles:
-  - Fetching `cities.geojson`.
-  - Initializing and configuring Leaflet maps.
-  - Selecting a random point in a city polygon using Turf.js.
-  - Handling user input on the guess map.
-  - Calculating and displaying results.
-  
-- **cities.geojson**: A GeoJSON file listing city polygons for random selection.
-
-## Notes
-
-- The game relies on `cities.geojson` to define possible city polygons.
-- Make sure the browser can fetch `cities.geojson` (e.g., run a local server if necessary).
-- The calculation of distances is approximate and uses the haversine formula.
