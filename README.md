@@ -2,6 +2,8 @@
 
 This is a browser-based guessing game where players see a random satellite image from a city and must guess the location on a map. After submitting the guess, the player is shown how far their guess was from the actual location.
 
+[Try it out here](https://hurr-son.github.io/where-in-the-world/)
+
 ## How It Works
 
 1. **Random City Location**: On load, the app fetches a `cities.geojson` file, selects a random city polygon, and chooses a random point within that city to display.
@@ -15,30 +17,3 @@ This is a browser-based guessing game where players see a random satellite image
    - A result map showing both the actual location and the player's guessed location, connected by a line.
    
 5. **Play Again**: The player can choose to play again, which resets the game with a new random location.
-
-## Files
-
-- **index.html**: The main HTML structure and references to CSS and JS.
-- **styles.css**: Basic styling for maps and UI elements.
-- **main.js**: The core game logic. It handles:
-  - Fetching `cities.geojson`.
-  - Initializing and configuring Leaflet maps.
-  - Selecting a random point in a city polygon using Turf.js.
-  - Handling user input on the guess map.
-  - Calculating and displaying results.
-  
-- **cities.geojson**: A GeoJSON file listing city polygons for random selection.
-
-## Requirements
-
-- **Leaflet.js**: Used for map rendering.
-- **Turf.js**: Used for random point generation and point-in-polygon checks.
-- **ESRI & OpenStreetMap Tiles**: Used as map tile sources.
-
-No build steps are necessary. Simply open `index.html` in a browser that supports modern JavaScript features.
-
-## Notes
-
-- The game relies on `cities.geojson` to define possible city polygons.
-- Make sure the browser can fetch `cities.geojson` (e.g., run a local server if necessary).
-- The calculation of distances is approximate and uses the haversine formula.
